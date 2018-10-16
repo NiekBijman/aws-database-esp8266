@@ -40,8 +40,8 @@ ADC_MODE(ADC_VCC);
 
 WiFiClientSecure client;
 
-const char* host = "hn69b1rt47.execute-api.eu-west-1.amazonaws.com";
-String url = "/alpha/data";
+const char* host = AWS_URL;
+String url = AWS_ENDPOINT;
 String ssid = WIFI_SSID;
 String password = KEY;
 
