@@ -1,15 +1,17 @@
 # Store RFID data in Amazon DynamoDB through the API gateway
-![GIF](/images/RFID_tags.v2.gif)
+<img src="/images/RFID_tags.v3.gif" alt="alt text" width="360" height="240">
 
 This project sends RFID tag data using HTTPS to AWS services to store data in their database. This repository can be useful to you if you want to learn more about the HTTPS protocol, setting up an API yourself and sending data to your API. Furthermore you can see examples for working with RFID data and libraries for creating JSON strings in Arduino. 
 
 ## Overview
-<img src="/images/Project-Infrastructure.png" alt="alt text" width="480" height="142">
-For this project you need:
-* An AWS account 
-* The BOM-list specified in the image 
 
-Setting up the API gateway and DynamoDB will take time. Depending on your experience with AWS. Here is a great walkthrough to set up the API gateway to forward data to DynamoDB -> https://www.youtube.com/watch?v=TuGyyTXPQ-U
+<img src="/images/Project-Infrastructure.png" alt="alt text" width="480" height="142">
+
+For this project you need:
+* An AWS account.
+* The BOM-list specified in *Hardware*.
+
+The API gateway and DynamoDB will take time to set up. Here is a great walkthrough to set up the API gateway to forward data to DynamoDB -> https://www.youtube.com/watch?v=TuGyyTXPQ-U
 
 
 
@@ -27,7 +29,11 @@ https://www.circuito.io/app?components=513,8662,360216,761981
 ## Software
 You have to set up an AWS account -> https://goo.gl/jzrnYe to send data to DynamoDB. Limited data storage fall under the AWS free tier which you can view here -> https://aws.amazon.com/free/ . If you are unsure if you fall in the free category you can check your billing console which keeps track of the costs for your project -> https://goo.gl/w36zHC. 
 
-Open the data-storage-dynamodb.ino file and place your Wifi SSID, password and AWS endpoint in the sketch. I'm using a local config file for this information so you can remove the line in the sketch to compile. 
+Arduino 
+* Open the data-storage-dynamodb.ino file 
+* Get the ESP8266  core for arduino in the Library Manager
+* In the Serial Monitor set the Baudrate to *115200* and select your ESP8266 board in *tools* -> *board* . These settings make sure that you can read the data that's being printed to the Serial monitor. 
+* Enter your **wifi-SSID**, **password** and **AWS URL** & **AWS Endpoint** from AWS in the .ino file.  I'm using a local config file for this information so you can remove the line in the sketch to compile. 
 
 
 <img src="/images/Prototype.png" alt="alt text" width="540" height="284">
