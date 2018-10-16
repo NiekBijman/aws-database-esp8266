@@ -1,15 +1,15 @@
 # Store RFID data in Amazon DynamoDB through the API gateway
-![GIF](/images/RFID_tags.v2.gif)
+<img src="/images/RFID_tags.v3.gif" alt="alt text" width="360" height="240">
 
 This project sends RFID tag data using HTTPS to AWS services to store data in their database. This repository can be useful to you if you want to learn more about the HTTPS protocol, setting up an API yourself and sending data to your API. Furthermore you can see examples for working with RFID data and libraries for creating JSON strings in Arduino. 
 
 ## Overview
 <img src="/images/Project-Infrastructure.png" alt="alt text" width="480" height="142">
 For this project you need:
-* An AWS account 
-* The BOM-list specified in the image 
+* An AWS account.
+* The BOM-list specified in the image.
 
-Setting up the API gateway and DynamoDB will take time. Depending on your experience with AWS. Here is a great walkthrough to set up the API gateway to forward data to DynamoDB -> https://www.youtube.com/watch?v=TuGyyTXPQ-U
+The API gateway and DynamoDB will take time to set up. Here is a great walkthrough to set up the API gateway to forward data to DynamoDB -> https://www.youtube.com/watch?v=TuGyyTXPQ-U
 
 
 
